@@ -17,11 +17,12 @@ class Login {
 					error++;
 				}
 			});
+
 			if (error == 0) {
 				//do login api here
 				localStorage.setItem("auth", 1);
 				this.form.submit();
-			}
+			}			
 		});
 	}
 
